@@ -39,13 +39,14 @@ public class ARObjectPlace : MonoBehaviour
             Quaternion Rot = RayHit[0].pose.rotation;
 
             Instantiate(raycastManager.raycastPrefab, Position, Rot);
-            StartCoroutine(Release());
+            //StartCoroutine(Release());
         }
     }
-
+    /*
     System.Collections.IEnumerator Release()
     {
         yield return new WaitForSeconds(0.25f);
         IsTap = false;
     }
+    */
 }
