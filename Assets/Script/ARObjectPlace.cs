@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem.EnhancedTouch;
@@ -8,6 +9,8 @@ public class ARObjectPlace : MonoBehaviour
 {
     [SerializeField] private ARRaycastManager raycastManager;
     private bool IsTap = false;
+
+    [SerializeField] Ease ease;
 
     void Update()
     {
@@ -38,7 +41,9 @@ public class ARObjectPlace : MonoBehaviour
             Vector3 Position = RayHit[0].pose.position;
             Quaternion Rot = RayHit[0].pose.rotation;
 
-            Instantiate(raycastManager.raycastPrefab, Position, Rot);
+            GameObject GObj = Instantiate(raycastManager.raycastPrefab, Position, Rot);
+            GObj.transform.localScale = Vector3.zero;
+            GObj.transform.DOScale(0.8f, 2f).SetEase(ease);
             //StartCoroutine(Release());
         }
     }
@@ -49,4 +54,5 @@ public class ARObjectPlace : MonoBehaviour
         IsTap = false;
     }
     */
+    
 }

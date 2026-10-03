@@ -734,6 +734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ARObjectPlace
   raycastManager: {fileID: 1902982960}
+  ease: 23
 --- !u!114 &1902982966
 MonoBehaviour:
   m_ObjectHideFlags: 0
