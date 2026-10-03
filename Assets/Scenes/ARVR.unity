@@ -588,6 +588,7 @@ GameObject:
   - component: {fileID: 1902982962}
   - component: {fileID: 1902982961}
   - component: {fileID: 1902982960}
+  - component: {fileID: 1902982965}
   m_Layer: 0
   m_Name: XR Origin (Mobile AR)
   m_TagString: Untagged
@@ -610,7 +611,7 @@ MonoBehaviour:
   <trackablesChanged>k__BackingField:
     m_PersistentCalls:
       m_Calls: []
-  m_RaycastPrefab: {fileID: 0}
+  m_RaycastPrefab: {fileID: 314895651880427154, guid: cdad35a68b5d6044e9d52f4bdc437031, type: 3}
 --- !u!114 &1902982961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -626,7 +627,7 @@ MonoBehaviour:
   <trackablesChanged>k__BackingField:
     m_PersistentCalls:
       m_Calls: []
-  m_PlanePrefab: {fileID: 0}
+  m_PlanePrefab: {fileID: 8729825532235812066, guid: 24d619d8e29175c46b5410a59629fc26, type: 3}
   m_DetectionMode: -1
 --- !u!114 &1902982962
 MonoBehaviour:
@@ -674,6 +675,19 @@ Transform:
   - {fileID: 1381404371}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1902982965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1902982959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ed2a6ad090d56c45b7b98f816bfa1dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ARObjectPlace
+  raycastManager: {fileID: 1902982960}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
